@@ -35,14 +35,15 @@ Attachment file
 - exctract_data.zip (python and batch file script)
 - sales_data_perqara_report.zip (Power BI report)
 - Documentation Project (docx file)
+- sales_data.zip (ready-made sqlite database)
 
 Installation instruction
-a.	Extract source data (data.zip)
-b.	Create sqlite database with the name sales_data.db and then execute sql file to generate table (script_databases_sqlite.zip)
-c.	Extract python and batch file script then modified code for adjust data source location and sqlite databases (exctract_data.zip)
-d.	Modified connection in power BI report to access your datamart and install odbc diver for sqlite if needed (sales_data_perqara_report.zip).
-e.	Modified batch file to adjus script python location
-f.	Testing batch file to run program
-g.	Create task schedule in windows system to run program autamatically (call batch file) or put the python/bat script in apache airflow.
+- Extract source data (data.zip)
+- Create sqlite database with the name sales_data.db and then execute sql file to generate table (script_databases_sqlite.zip) or use a ready-made sqlite database (sales_data.zip).
+- Extract python and batch file script then modified code for adjust data source location and sqlite databases (exctract_data.zip)
+- Modified connection in power BI report to access your datamart and install odbc diver for sqlite if needed (sales_data_perqara_report.zip).
+- Modified batch file to adjus script python location
+- Testing batch file to run program
+- Create task schedule in windows system to run program autamatically (call batch file) or put the python/bat script in apache airflow.
 
 Thanks
