@@ -1,6 +1,6 @@
 About Project 
 
-- This project to create a datamart whose data comes from https://www.kaggle.com/datasets/datascientist97/e-commerece-sales-data-2024.
+- This project to create a datamart which data comes from https://www.kaggle.com/datasets/datascientist97/e-commerece-sales-data-2024.
 - ETL process using python script and sqlite as data storage for datamart.
 - Automate jobs using task scheduler in windows system by running batch file that calls python script or put the python/bat script in apache airflow
 - Datamart results in sqlite databases are used to build dashboards with Power BI
