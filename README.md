@@ -45,3 +45,4 @@ e.	Modified batch file to adjus script python location
 f.	Testing batch file to run program
 g.	Create task schedule in windows system to run program autamatically (call batch file) or put the python/bat script in apache airflow.
 
+Thanks
