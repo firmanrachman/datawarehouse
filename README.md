@@ -18,7 +18,7 @@ ETL Process
     - Insert into table staging for temporary data
     - Load data from table staging to datamart (dimension and fact table). 
         
-Databases Structure (Please check sql file attachment for detail table structure)
+Databases Structure (Please check sql file attachment or documentation file for detail table structure)
 - Customer_Staging
 - Product_Staging
 - Sales_Staging
@@ -27,20 +27,21 @@ Databases Structure (Please check sql file attachment for detail table structure
 - Sales_fact
 - Date_dim
   
-Datawarehouse design using star schema model (check Pbix file to view design schema). Example results can be reviewed in the Power BI report
+Datawarehouse design using star schema model (check Pbix file to view design schema or documentation file). Example results can be reviewed in the Power BI report
 
 Attachment file
 - data.zip (source data)
-- exctract_data.zip (python and batch file script)
 - script_databases_sqlite.zip (sql file script)
+- exctract_data.zip (python and batch file script)
 - sales_data_perqara_report.zip (Power BI report)
 - Documentation Project (docx file)
 
 Installation instruction
-- extract source data (data.zip)
-- create sqlite database with the name sales_data and then execute sql file to generate table 
-- extract python and batch file script and modified code for adjust data source location and sqlite databases
-- modified connection in power BI report to access your datamart in sqlite databases (install odbc diver for sqlite if needed).
-- Modified batch file to adjus script python location
-- Testing batch file to run program
-- create task schedule in windows system to run program autamatically (call batch file) or put the python/bat script in apache airflow.
+a.	Extract source data (data.zip)
+b.	Create sqlite database with the name sales_data.db and then execute sql file to generate table (script_databases_sqlite.zip)
+c.	Extract python and batch file script then modified code for adjust data source location and sqlite databases (exctract_data.zip)
+d.	Modified connection in power BI report to access your datamart and install odbc diver for sqlite if needed (sales_data_perqara_report.zip).
+e.	Modified batch file to adjus script python location
+f.	Testing batch file to run program
+g.	Create task schedule in windows system to run program autamatically (call batch file) or put the python/bat script in apache airflow.
+
