@@ -64,3 +64,9 @@ clean_df_customer = clean_df_customer.loc[:, ~clean_df_customer.columns.str.cont
 clean_df_sales_data = clean_df_sales_data.loc[:, ~clean_df_sales_data.columns.str.contains('^Unnamed')]
 clean_df_product = clean_df_product.loc[:, ~clean_df_product.columns.str.contains('^Unnamed')]
 ````
+
+## Connect to databases SQL Lite as data warehouse
+````
+sqliteConnection = sqlite3.connect('E:\Perqara\sales_data.db')
+cursor = sqliteConnection.cursor
+````
